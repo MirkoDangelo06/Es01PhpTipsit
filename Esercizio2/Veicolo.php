@@ -35,7 +35,7 @@ class Veicolo {
 
 
   function stampaAttributi(){
-    echo $this->marca . " " . $this->anno . "<br>";
+    echo "1)Marca: " . $this->marca . " 2)Anno: " . $this->anno . "<br>";
   }
 
 }

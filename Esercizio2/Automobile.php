@@ -19,7 +19,7 @@ class Automobile extends Veicolo{
 
 
      function stampaAttributi(){
-    echo $this->marca . " " . $this->anno . " " .$this->modello . "<br>";
+     echo " 1)Marca: " . $this->marca .  " 2)Anno: " . $this->anno  . " 3) Modello: " . $this->modello . "<br>";
   }
 
      
