@@ -1,6 +1,6 @@
 <?php
 
-class Alunno {
+class Alunno implements JsonSerializable{
   protected $nome;
   protected $cognome;
   protected $eta;
@@ -9,6 +9,17 @@ class Alunno {
   function set_name($nome) {
     $this->nome = $nome;
   }
+
+  public function jsonSerialize(): array{
+    return{
+      'nome' => $this->nome,
+      'cognome' =>$this->cognome,
+      'eta' =>$this->eta
+
+    };
+  }
+
+
 
   function set_cognome($cognome) {
     $this->cognome = $cognome;

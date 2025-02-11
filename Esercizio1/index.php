@@ -10,6 +10,7 @@
     <h1>Ciao regaz, ecco l'elenco degli alunni</h1>
 
     <?php
+        header("Content-Type: application/json");
          require_once "Alunno.php";
 
         $a1 = new Alunno("Mirko", "Dangelo", 18);
@@ -19,6 +20,8 @@
         foreach( $arStudenti  as $x){
             $x->stampaAttributi();
         }
+
+        echo json_encode($arStudenti);
 
     ?>
 
